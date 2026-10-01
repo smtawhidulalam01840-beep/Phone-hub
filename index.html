@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneHub</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #111827;
+      padding: 20px;
+    }
+
+    .header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+      border-radius: 18px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+    }
+
+    .header p {
+      margin-top: 6px;
+      color: #cbd5e1;
+    }
+
+    .add {
+      margin-top: 15px;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: white;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    .devices {
+      display: grid;
+      gap: 15px;
+    }
+
+    .device {
+      background: white;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .device h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .online {
+      color: #16a34a;
+      font-weight: bold;
+    }
+
+    .offline {
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+    .info {
+      margin: 8px 0;
+      color: #475569;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .buttons button {
+      border: 0;
+      padding: 10px 14px;
+      border-radius: 9px;
+      background: #e5e7eb;
+      font-weight: bold;
+    }
+
+    .security {
+      margin-top: 20px;
+      background: white;
+      padding: 18px;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>📱 PhoneHub</h1>
+    <p>My Personal Device Manager</p>
+    <button class="add">＋ Connect Phone</button>
+  </div>
+
+  <div class="devices">
+
+    <div class="device">
+      <h2>📱 Poco M3</h2>
+      <div class="online">● Online</div>
+      <div class="info">🔋 Battery: 71%</div>
+      <div class="info">💾 Storage: 48 / 64 GB</div>
+      <div class="info">🖼️ Photos: 2,481</div>
+
+      <div class="buttons">
+        <button>Photos</button>
+        <button>Files</button>
+        <button>Security</button>
+      </div>
+    </div>
+
+    <div class="device">
+      <h2>📱 OPPO A54</h2>
+      <div class="online">● Online</div>
+      <div class="info">🔋 Battery: 43%</div>
+      <div class="info">💾 Storage: 57 / 128 GB</div>
+      <div class="info">🖼️ Photos: 5,904</div>
+
+      <div class="buttons">
+        <button>Photos</button>
+        <button>Files</button>
+        <button>Security</button>
+      </div>
+    </div>
+
+    <div class="device">
+      <h2>📱 Samsung A71</h2>
+      <div class="offline">● Offline</div>
+      <div class="info">💾 Storage: 91 / 128 GB</div>
+      <div class="info">Last active: Recently</div>
+
+      <div class="buttons">
+        <button>Photos</button>
+        <button>Files</button>
+        <button>Security</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="security">
+    <h2>🔐 Security</h2>
+    <p style="margin-top:8px;">No recent security alerts.</p>
+  </div>
+
+</body>
+  </html>
